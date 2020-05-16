@@ -14,7 +14,7 @@ file_5 = pd.read_csv("napu.csv")
 df = file_5.drop(file_5.columns[[0]], axis=1)   
 
 def csv1():
-    data = pd.read_csv("napu.csv")
+    data = df
     sent_data = pd.read_csv("final_csv.csv")
     for i in range(len(data)):
         name = data.iloc[i,0]
